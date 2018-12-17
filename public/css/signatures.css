@@ -1,0 +1,69 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding: 25px;
+}
+
+.fixed-table {
+  overflow-y: auto;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.fixed-table table {
+  border-collapse: none;
+}
+
+.fixed-table th,
+.fixed-table td {
+  padding: 8px 16px;
+}
+
+.fixed-table th {
+  position: sticky;
+  top: 0;
+  background: #eee;
+}
+
+.sortableCol:hover {
+	cursor: pointer;
+	background-color: #D3D3D3!important;
+	color: black!important;
+}
+
+.colHeader {
+	width: 25%;
+}
+
+#signatures tbody tr:hover {
+	background-color: #C0C0C0;
+	cursor: pointer;
+}
+
+.descriptionHeader {
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-color: #D3D3D3;
+}
+
+.descriptionContent {
+	margin-bottom: 15px;
+}
+
+#signatureHeader {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#signatureDetails tr td {
+	text-align: center;
+	padding: 10px;
+}
+
+#signatureDetails tr td:nth-child(1) {
+	font-weight: bold;
+}

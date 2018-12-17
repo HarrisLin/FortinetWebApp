@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/signatures.css">
+
+        <title>Application Signatures</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="margin-bottom: 10px;">
+                <h1 class="col-md-4 offset-md-4" align="center">
+                    Application Signatures
+                </h1>
+                <input id="searchInput" class="col-md-4 offset-md-8" placeholder="Search by Name or ID">
+            </div>
+            <div class="row">
+                <div class="fixed-table">
+                    <table id="signatures" class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="colHeader sortableCol" onclick="sorter(this)">ID</th>
+                                <th class="colHeader sortableCol" onclick="sorter(this)">Name</th>
+                                <th class="colHeader">Risk</th>
+                                <th class="colHeader sortableCol" onclick="sorter(this)">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    <img src="images/load.gif" alt="loading" class="col-md-2 offset-md-5">
+                </div>
+            </div>
+        </div>
+        <div id="sigDescription" class="container" style="display: none">
+            <div class="row">
+                <h2 id="signatureHeader" class="col-md-8 offset-md-2">
+                    
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <table id="signatureDetails">
+                        <tr>
+                            <td>ID</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Company</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>URL</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-8">
+                    <div class="row descriptionHeader">
+                        <h4 class="col-md-4 offset-md-4 header">Description</h4>
+                    </div>
+                    <div class="row descriptionContent">
+                        <span id="signatureDescription"></span>
+                    </div>
+                    <div class="row descriptionHeader">
+                        <h4 class="col-md-4 offset-md-4 header">Reason</h4>
+                    </div>
+                    <div class="row descriptionContent">
+                        <div id="signatureReason"></div>
+                    </div>
+                    <div class="row descriptionHeader">
+                        <h6>Reference: </h6>
+                    </div>
+                    <div id="signatureHref"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="libs/popper/popper.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/signatures.js"></script>
+    </body>
+</html>

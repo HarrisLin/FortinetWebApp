@@ -5,6 +5,9 @@ Loads a table, with each row clickable for more detail about a signature.
 Can Sort by ID, Name, and Date.
 Can Search by ID and Name
 
+Requires CORS Plugin [Chrome Store](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) on chrome, since I dont have access to the server, I was unable to bypass this CORS problem reasonably with a server sided proxy, or CORS headers sent by the server. Thought about jsonp but endpoint didnt return a valid json and I didnt want to use extra jquery plugins. I think this chrome plugin was a good solution for this small project.
+Will be unable to get data from endpoint if plugin isn't installed.
+
 Demo currently hosted on Amazon [Here](http://fortinetwebapp.us-west-2.elasticbeanstalk.com/)
 
 ### Installing
